@@ -1,0 +1,91 @@
+
+
+### get list
+GET http://localhost:8080/article/public/list?page=0&size=2
+
+### get by type id
+GET http://localhost:8080/article/public/type/1
+
+
+###get by id
+GET http://localhost:8080/article/public/1
+
+
+### get by region id
+GET http://localhost:8080/article/public/region/1?page=0&size=2
+
+
+
+### get  by category id
+GET http://localhost:8080/article/public/category/1?page=0&size=2
+
+
+### get by type id
+GET http://localhost:8080/article/public/type/1?page=0&size=2
+
+### last 4
+GET http://localhost:8080/article/public/last
+
+
+### top 4 region id  (1 bu region id)
+GET http://localhost:8080/article/public/region/1/4
+
+###  top 4 category id (1 bu category id)
+GET http://localhost:8080/article/public/category/1/4
+
+
+### get share link
+GET http://localhost:8080/article/public/share/1
+
+
+### update view count
+GET http://localhost:8080/article/public/view/1
+
+###create article
+POST http://localhost:8080/article/adm
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODExMjQ3LCJleHAiOjE2NTE4MTQ4NDcsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.y-w1qjZ_GhNf3cCOouTIFfdplc8mkOx1V9DgSxMW_Xg
+
+{
+  "title": "Zor yangilik bor",
+  "description":"Vapshe zor",
+  "content": "moshina urub yuborip qayta tirildi",
+  "attachId": 1,
+  "categoryId": 1,
+  "regionId": 1,
+  "typeId": 1
+}
+
+### update article
+PUT http://localhost:8080/article/adm/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODExMjQ3LCJleHAiOjE2NTE4MTQ4NDcsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.y-w1qjZ_GhNf3cCOouTIFfdplc8mkOx1V9DgSxMW_Xg
+
+{
+  "title": "Zor yangilik bor",
+  "description":"Vapshe zor",
+  "content": "moshina urub yuborip qayta tirildi"
+}
+
+### change status
+PUT http://localhost:8080/article/adm/blocked/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODExMjQ3LCJleHAiOjE2NTE4MTQ4NDcsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.y-w1qjZ_GhNf3cCOouTIFfdplc8mkOx1V9DgSxMW_Xg
+
+### get by id adm
+GET http://localhost:8080/article/adm/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODExMjQ3LCJleHAiOjE2NTE4MTQ4NDcsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.y-w1qjZ_GhNf3cCOouTIFfdplc8mkOx1V9DgSxMW_Xg
+Accept-Language: en
+
+
+### delete
+DELETE http://localhost:8080/article/adm/delete/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODExMjQ3LCJleHAiOjE2NTE4MTQ4NDcsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.y-w1qjZ_GhNf3cCOouTIFfdplc8mkOx1V9DgSxMW_Xg
+
+
+
+
+
+
+
+
+

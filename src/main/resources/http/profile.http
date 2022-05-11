@@ -1,0 +1,70 @@
+### create profile for adm
+POST http://localhost:8080/profile/adm
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJudWxsIiwiaWF0IjoxNjUxNjc5Mjc0LCJleHAiOjE2NTE2ODI4NzQsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24ifQ.7JKwzoGlCYe-CqJZohAlTfmfCZpDoQarNPcl5Um9U7s
+
+{
+  "name": "Nurken",
+  "surname": "Djangibaev",
+  "email": "djangibaevnurkenbai@gmail.com",
+  "password": "12345678",
+  "role": "USER"
+}
+
+### get by id
+GET http://localhost:8080/profile/adm/get/1
+Authorization: Bearer
+
+### get by email
+GET http://localhost:8080/profile/adm/get
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxNjgxMDY0LCJleHAiOjE2NTE2ODQ2NjQsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.G9bjfJgSY800aXoAa5c__ozBaA5e8k9u06v5C5t0Ctk
+
+{
+  "email": "djangibaevnurkenbai@gmail.com"
+}
+
+### get list
+GET http://localhost:8080/profile/adm
+Authorization: Bearer
+
+
+### delete by  email
+DELETE http://localhost:8080/profile/adm
+Content-Type: application/json
+Authorization: Bearer
+
+{
+  "email": "djangibaevnurkenbai@gmail.com"
+}
+
+### delete by id
+DELETE http://localhost:8080/profile/adm/delete/1
+Authorization: Bearer
+
+
+### update by id
+PUT http://localhost:8080/profile/adm/update/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJudWxsIiwiaWF0IjoxNjUxNjc5Mjc0LCJleHAiOjE2NTE2ODI4NzQsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24ifQ.7JKwzoGlCYe-CqJZohAlTfmfCZpDoQarNPcl5Um9U7s
+
+{
+  "name": "Nurken",
+  "surname": "Djangibaev",
+  "email": "djangibaevnurkenbai@gmail.com",
+  "password": "12341234",
+  "role": "ADMIN"
+}
+
+### update by email
+PUT http://localhost:8080/profile/adm/update/{id}
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxNjgxMDY0LCJleHAiOjE2NTE2ODQ2NjQsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.G9bjfJgSY800aXoAa5c__ozBaA5e8k9u06v5C5t0Ctk
+
+{
+  "name": "Nurken",
+  "surname": "Djangibaev",
+  "email": "djangibaevnurkenbai@gmail.com",
+  "password": "12341234",
+  "role": "ADMIN"
+}

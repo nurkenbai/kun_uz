@@ -1,0 +1,32 @@
+### create adm
+POST http://localhost:8080/region/adm
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODExMjQ3LCJleHAiOjE2NTE4MTQ4NDcsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.y-w1qjZ_GhNf3cCOouTIFfdplc8mkOx1V9DgSxMW_Xg
+
+{
+  "nameUz": "Suhbatlar",
+  "nameRu": "Собисение",
+  "nameEn": "Interview",
+  "key": "interview"
+}
+
+### update adm
+PUT http://localhost:8080/region/adm/update/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODExMTM5LCJleHAiOjE2NTE4MTQ3MzksImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.JQdzmlekP1RJMW3olPRy4pn2a2UfQqezcNJgLEXJouk
+
+{
+  "nameUz": "Jahon_xabarlari",
+  "nameRu": "Мировой_новости",
+  "nameEn": "World_news",
+  "key": "worldnews"
+}
+
+
+### get by key adm
+GET http://localhost:8080/region/adm/get/interview
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODExMjQ3LCJleHAiOjE2NTE4MTQ4NDcsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.y-w1qjZ_GhNf3cCOouTIFfdplc8mkOx1V9DgSxMW_Xg
+
+
+### get list by lang public
+GET http://localhost:8080/region/public/{id}

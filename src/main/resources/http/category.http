@@ -1,0 +1,41 @@
+### create adm
+POST http://localhost:8080/category/adm
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODExMjQ3LCJleHAiOjE2NTE4MTQ4NDcsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.y-w1qjZ_GhNf3cCOouTIFfdplc8mkOx1V9DgSxMW_Xg
+
+{
+  "nameUz": "O'zbekiston ",
+  "nameRu": "Узбекистан",
+  "nameEn": "Uzbekistan",
+  "key": "uzbekistan"
+}
+
+### update adm
+PUT http://localhost:8080/category/adm/update/{{id}}
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJudWxsIiwiaWF0IjoxNjUxNjc5Mjc0LCJleHAiOjE2NTE2ODI4NzQsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24ifQ.7JKwzoGlCYe-CqJZohAlTfmfCZpDoQarNPcl5Um9U7s
+
+{
+  "nameUz": "Jahon_xabarlari",
+  "nameRu": "Мировой_новости",
+  "nameEn": "World_news",
+  "key": "worldnews"
+}
+
+### delete adm
+PUT http://localhost:8080/category/adm/delete/{{id}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODExMjQ3LCJleHAiOjE2NTE4MTQ4NDcsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.y-w1qjZ_GhNf3cCOouTIFfdplc8mkOx1V9DgSxMW_Xg
+
+### get list adm
+GET http://localhost:8080/category/adm/list/ru
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODkxNDY1LCJleHAiOjE2NTE4OTUwNjUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.utDnA0T2RDm9i7E_4Wgkv5F-vEe9f08eUFcvtFL0EeE
+
+### get by id adm
+GET http://localhost:8080/category/adm/getById/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxODExMjQ3LCJleHAiOjE2NTE4MTQ4NDcsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.y-w1qjZ_GhNf3cCOouTIFfdplc8mkOx1V9DgSxMW_Xg
+
+
+
+
+### get list by lang public
+GET http://localhost:8080/category/public/uz

@@ -1,0 +1,22 @@
+
+### login
+POST http://localhost:8080/auth/login
+Content-Type:  application/json
+
+{
+  "email": "mukhtarovsarvarbek@gmail.com",
+  "password": "12341234"
+}
+
+### registration
+POST http://localhost:8080/auth/registration
+Content-Type: application/json
+
+{
+  "name": "Nurken",
+  "surname": "Djangibaev",
+  "email": "djangibaevnurkenbai@gmail.com",
+  "password": "12345678"
+}
+
+
